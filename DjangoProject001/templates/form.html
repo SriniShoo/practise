@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Search Form</title>
+</head>
+<body>
+	<form method="POST" action="/search/">
+		{% csrf_token %} 
+		<input type="text" name="nameField">
+		<button type="submit">Upload text</button>
+	</form>
+</body>
+</html>
