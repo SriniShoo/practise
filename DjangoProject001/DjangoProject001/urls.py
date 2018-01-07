@@ -24,4 +24,5 @@ urlpatterns = [
     path('index/', index, name = 'Index Page'),
     path('search/', search, name = 'Search Page'),
     path('fungame/', numberGame, name = 'Number Game for Kids'),
+    path('dnd/', dnd, name = 'Drag And Drop Page'),
 ]

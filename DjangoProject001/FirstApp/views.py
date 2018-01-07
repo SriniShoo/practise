@@ -21,4 +21,7 @@ def search(request):
 def numberGame(request):
     return render(request, 'numberGame.html', locals(), content_type = None, status = None, using = None)
 
+def dnd(request):
+    return render(request, 'dnd.html', locals())
+
 # Create your views here.
