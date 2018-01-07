@@ -17,11 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from FirstApp.views import *
 from django.views.generic.base import RedirectView
-from django.http.response import HttpResponsePermanentRedirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url = 'index/', permanent = False), name = 'Main View'),
     path('index/', index, name = 'Index Page'),
     path('search/', search, name = 'Search Page'),
+    path('fungame/', numberGame, name = 'Number Game for Kids'),
 ]

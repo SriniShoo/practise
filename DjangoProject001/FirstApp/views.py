@@ -18,5 +18,7 @@ def search(request):
     else:
         return render(request, 'form.html')
         
+def numberGame(request):
+    return render(request, 'numberGame.html', locals(), content_type = None, status = None, using = None)
 
 # Create your views here.
